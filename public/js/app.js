@@ -1,12 +1,5 @@
 console.log("Client side js is loaded");
 
-// fetch('http://puzzle.mead.io/puzzle').then((response) => {
-//     console.log('Response is ', response);
-//     response.json().then((data) => {
-//         console.log('Data is ', data);
-//     })
-// });
-
 const fetchForecast = (address, callback) => {
     fetch('http://localhost:3000/weather?address=' + address).then((response) => {
     response.json().then((data) => {
